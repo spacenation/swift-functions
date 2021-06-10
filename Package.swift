@@ -4,18 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Currying",
+    name: "Functions",
     products: [
         .library(
-            name: "Currying",
-            targets: ["Currying"]),
+            name: "Functions",
+            targets: ["Functions"]),
     ],
     targets: [
         .target(
-            name: "Currying",
+            name: "Functions",
             dependencies: []),
         .testTarget(
-            name: "CurryingTests",
-            dependencies: ["Currying"]),
+            name: "FunctionsTests",
+            dependencies: ["Functions"]),
     ]
 )

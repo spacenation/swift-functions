@@ -1,1 +1,1 @@
-### Currying
+### Functions
