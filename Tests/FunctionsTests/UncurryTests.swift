@@ -1,5 +1,5 @@
 import XCTest
-import Currying
+import Functions
 
 final class UncurryTests: XCTestCase {
     func testUncurry() {
