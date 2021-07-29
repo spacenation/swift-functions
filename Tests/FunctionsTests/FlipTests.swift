@@ -3,11 +3,10 @@ import Functions
 
 final class FlipTests: XCTestCase {
     func testFlip() {
-        XCTAssert(curry(flip(-))(1)(2) == 1)
-        XCTAssert(flip(curry(-))(1)(2) == 1)
+        func append(s1: String, s2: String) -> String {
+            s1 + s2
+        }
+        
+        XCTAssert(flip(append)("1", "2") == "21")
     }
-
-    static var allTests = [
-        ("testFlip", testFlip),
-    ]
 }
